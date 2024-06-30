@@ -1,5 +1,38 @@
 @charset "UTF-8";
-
+/* Transiciones al index */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-outline-dark {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  color: #fff;
+  border-color: #343a40;
+}
+.card-img-top {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.card-img-top:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+header {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+header:hover {
+  background-color: #1d3557;
+  color: #f1faee;
+}
+/* Fin Transiciones */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
