@@ -33,6 +33,22 @@ header:hover {
   color: #f1faee;
 }
 /* Fin Transiciones */
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.animated-text {
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+
+.animated-text:hover {
+  color: red; /* Cambia el color al pasar el cursor */
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
