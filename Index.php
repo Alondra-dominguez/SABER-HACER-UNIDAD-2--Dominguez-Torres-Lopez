@@ -1,3 +1,7 @@
+<?php 
+	session_start();
+	require_once 'conexion.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +22,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item"><a class="nav-link active text-white" aria-current="page" href="#!">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#!">About</a></li>
+                    <li class="nav-item"><a class="nav-link active text-white" aria-current="page" href="Index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -27,6 +31,7 @@
                             <li><hr class="dropdown-divider" /></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="logout.php">Salir</a></li>
                 </ul>
                 <form class="d-flex">
                     <button class="btn btn-outline-dark text-white" type="submit">
@@ -45,6 +50,7 @@
                     <span class="animated-text" id="text1">Bienvenidos</span> 
                     <span class="animated-text" id="text2">A CROP</span>
                     <span class="animated-text" id="text3">SHOP</span>
+                    <span class="animated-text" id="text3"><?php echo $_SESSION['user'] ?></span>
                 </h1>
                 <p class="lead fw-normal text-white-50 mb-0">El Canino En Las Palmas De Tus Manos</p>
             </div>
