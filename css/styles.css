@@ -1,5 +1,75 @@
 @charset "UTF-8";
 /* Transiciones al index */
+    .navbar-light {
+        background-color: #3498db !important; /* Cambia a otro color */
+    }
+    .nav-link:hover {
+        color: #ff6347 !important; /* Cambia el color rojo a otro color al pasar el mouse */
+    }
+    .product-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .product-card {
+        width: 220px; /* Aumentado el ancho para espacio adicional */
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        text-align: center;
+        position: relative; /* Añadido para alinear elementos internos */
+    }
+    .product-card:hover {
+        transform: scale(1.05); /* Ajustado el zoom al pasar el cursor */
+    }
+    .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+    }
+    .product-details {
+        padding: 10px;
+    }
+    .product-brand {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    .product-price {
+        font-size: 1rem;
+        margin-top: 5px;
+        text-align: left; /* Alineación a la izquierda */
+    }
+    .add-to-cart-btn {
+        margin-top: 10px; /* Espacio entre nombre y detalles */
+        padding: 8px 16px; /* Tamaño del botón ajustado */
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s; /* Transición de color */
+    }
+    .add-to-cart-btn:hover {
+        background-color: #2980b9; /* Cambio de color al pasar el cursor */
+    }
+    .offer-tag {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 5px 10px;
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+
+
+
+
 .navbar {
   transition: background-color 0.3s ease;
 }

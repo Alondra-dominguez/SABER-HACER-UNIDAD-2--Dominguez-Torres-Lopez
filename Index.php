@@ -21,6 +21,64 @@
         .nav-link:hover {
             color: #ff6347 !important; /* Cambia el color rojo a otro color al pasar el mouse */
         }
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product-card {
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+            position: relative; /* Añadido para alinear elementos internos */
+        }
+        .product-card:hover {
+            transform: scale(1.1);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+        .product-details {
+            padding: 10px;
+        }
+        .product-name {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .product-price {
+            font-size: 1rem;
+            margin-top: 5px;
+            text-align: left; /* Alineación a la izquierda */
+        }
+        .add-to-cart-btn {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .offer-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 5px 10px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -65,30 +123,17 @@
         </div>
     </header>
     <section id="product-section" class="py-5">
-        <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" id="product-list">
-                <!-- Aquí se agregarán las tarjetas de productos -->
-            </div>
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="product-gallery" id="product-list">
+            <!-- Aquí se agregarán las tarjetas de productos -->
         </div>
-    </section>
+    </div>
+</section>
+
+
     <footer class="py-5 bg-dark">
         <div class="container"><p class="m-0 text-center text-white">SABER HACER &copy;2024</p></div>
     </footer>
-
-    <!-- Carrusel de imágenes -->
-    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" id="carousel-images">
-            <!-- Aquí se agregarán las imágenes del producto -->
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
