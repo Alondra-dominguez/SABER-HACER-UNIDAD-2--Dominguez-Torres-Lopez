@@ -67,6 +67,70 @@
         border-radius: 5px;
     }
 
+    .navbar-light {
+      background-color: #3498db !important; /* Cambia a otro color */
+  }
+  .nav-link:hover {
+      color: #ff6347 !important; /* Cambia el color rojo a otro color al pasar el mouse */
+  }
+  .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+  .product-card {
+      width: 200px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #fff;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      position: relative; /* Añadido para alinear elementos internos */
+  }
+  .product-card:hover {
+      transform: scale(1.1);
+  }
+  .product-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+  }
+  .product-details {
+      padding: 10px;
+  }
+  .product-name {
+      font-size: 1.2rem;
+      margin-top: 10px;
+  }
+  .product-price {
+      font-size: 1rem;
+      margin-top: 5px;
+      text-align: left; /* Alineación a la izquierda */
+  }
+  .add-to-cart-btn {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .offer-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 5px 10px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+  }
 
 
 
